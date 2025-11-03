@@ -1,17 +1,9 @@
-#course-title {
-    display: block; /* Make it a block element */
-    text-align: center; /* Center the text */
-    font-size: 1.5em; /* Optional adjustment */
-    margin: 0 auto; /* Center horizontally */
-}
-
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
 }
-
 
 header {
     background-color: #230980; /* Dark background for the header */
@@ -35,24 +27,21 @@ header nav ul li a {
     text-decoration: none; /* Remove underline from links */
 }
 
-header span {
-    text-align: center;
+header nav ul li a:hover {
+    text-decoration: underline; /* Add an underline on hover */
 }
-
 
 main {
     padding: 20px; /* Add padding to the main content */
 }
 
-
 .grid {
-    display: flex; /* Use flexbox for a responsive layout */
+    display: grid; /* Use CSS Grid for the layout */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive columns */
     gap: 20px; /* Space between cards */
 }
 
-
 .card {
-    flex: 1; /* Flex grow to take available space */
     border: 1px solid #ccc; /* Light border around cards */
     border-radius: 8px; /* Rounded corners */
     overflow: hidden; /* Hide overflow content */
@@ -60,25 +49,9 @@ main {
     padding: 15px; /* Padding inside cards */
 }
 
-
-sections */
 .card h2,
 .card h3 {
-    clear: both; /* Ensure the headings are not affected by the floated elements */
-}
-
-.card h2 img {
-    float: left; /* Float image left for h2 */
-    margin-right: 15px; /* Space between image and text */
-    max-width: 150px; /* Set a max width for the image */
-    height: auto; /* Maintain aspect ratio */
-}
-
-.card h3 img {
-    float: right; /* Float image right for h3 */
-    margin-left: 15px; /* Space between image and text */
-    max-width: 150px; /* Set a max width for the image */
-    height: auto; /* Maintain aspect ratio */
+    color: #6c1677; /* Dark color for headings */
 }
 
 .card p {
@@ -95,9 +68,17 @@ footer {
     color: #fff; /* White text color */
     text-align: center; /* Center align footer content */
     padding: 10px 0; 
- }
+}
 
 h1, h2, h3, h4 {
     color: #6c1677; /* Dark color for headings */
-} 
+}
 
+footer {
+    color: #fff; /* Ensure footer text is white for contrast */
+}
+
+/* Adjustments to ensure sufficient contrast */
+header, footer {
+    background-color: #230980; /* Use this as the main color for the header */
+}
