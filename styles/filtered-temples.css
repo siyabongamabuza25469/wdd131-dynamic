@@ -1,5 +1,5 @@
 #humbutton {
-            display: block; /* Or inline-block, depending on layout */
+            display: block; 
             padding: 10px 15px;
             background-color: #007bff;
             color: white;
@@ -11,43 +11,82 @@
         #humbutton:hover {
             background-color: #0056b3;
         }
-        .nav-menu {
-            display: block; /* Hidden by default, JavaScript will toggle this */
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            background-color: #f8f9fa;
-            border: 1px solid #ddd;
-            width: 200px;
-        }
-        .nav-menu.active {
-            display: block; /* Show when active */
-        }
-        .nav-menu li a {
-            display: block;
-            padding: 10px;
-            text-decoration: none;
-            color: #333;
-        }
-        .nav-menu li a:hover {
-            background-color: #e9ecef;
-        }
-        /* Placeholder for temple images */
-        .temple-images-container {
-            display: block; /* Hidden by default */
-            margin-top: 20px;
+        
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+nav {
+    background-color: #aaee0c;
+    padding: 1em;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+}
+
+nav a {
+    color: #0b0b0c; 
+    text-decoration: none;
+    padding: 0.5em 1em;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+nav a:hover {
+    background-color: #575757; 
+}
+
+nav.active {
+    display: flex; 
+}
+
+#navigation-menu {
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+    display: flex; 
+    justify-content: flex-start; 
+}
+
+#navigation-menu li {
+    margin-right: 20px; 
+}
+
+
+main {
+    max-width: 960px; 
+    margin: 20px auto; 
+    padding: 0 15px;
+}
+
+
+.figure-container {
+    display: grid; 
+    grid-template-columns: 1fr; 
+    gap: 20px; 
+}
+
+.temple-card {
             border: 1px solid #ccc;
             padding: 15px;
-            background-color: #f0f0f0;
+            text-align: center;
+            box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
         }
-        .temple-images-container.show {
-            display: block; /* Show when triggered */
-        }
-        .temple-images-container img {
+        .temple-card img {
             max-width: 100%;
             height: auto;
-            margin-bottom: 10px;
+            display: block;
+            margin: 0 auto 10px;
         }
+        .temple-card h1 {
+            margin-top: 0;
+        }
+
 .temple-grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
