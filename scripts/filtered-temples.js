@@ -108,7 +108,7 @@ function createTempleCard() {
         dedication.innerHTML = `<span class ="label">dedicated:</span> ${temple.dedicated}`;
         area.innerHTML = `<span class = "label">size:</span> ${temple.area} sq ft`;
         img.setAttribute("src", temple.imageUrl);
-        img.setAttribute("alt, ${temple.templeName}temple");
+        img.setAttribute("alt", `${temple.templeName} temple`); // Corrected line
         img.setAttribute("loading", "lazy");
 
         card.appendChild(name);
