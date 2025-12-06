@@ -86,9 +86,8 @@ const temples = [
         location: "Adelaide, South Australia, Australia",
         dedicated: "2000, June 15",
         area: 10700,
-        imageUrl: "https://content.churchofjesuschrist.org/temples/assets/01/adelaide-australia-temple-800x500.jpg",
-        
-  }
+        imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/adelaide-australia/400x250/adelaide-australia-temple-exterior-1033333-wallpaper.jpg"      
+  },
   // Add more temple objects here...
 ];
 
